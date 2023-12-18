@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: guzzhao/my-react-app
-          path: my-tools
+          path: src
       - run: ls
       - run: cd my-tools
       - run: ls
