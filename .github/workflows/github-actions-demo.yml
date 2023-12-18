@@ -22,4 +22,9 @@ jobs:
       - run: cd posts
       - run: ls
       - run: pwd
+      - run: echo "🍏 ------------========="
+    
+      - run: |
+          ls
+        working-directory: posts
       
