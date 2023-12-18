@@ -17,7 +17,7 @@ jobs:
         with:
           repository: guzzhao/myBlog
           ref: main
-      - run: ls
+      - run: ls -alh
       - run: cd posts
       - run: ls
       - run: cd src
