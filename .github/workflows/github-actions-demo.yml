@@ -19,6 +19,6 @@ jobs:
           path: src
           ref: main
       - run: ls
-      - run: cd my-tools
+      - run: cd src
       - run: ls
       
