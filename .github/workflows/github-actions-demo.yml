@@ -15,7 +15,7 @@ jobs:
       - name: Checkout tools repo
         uses: actions/checkout@v4
         with:
-          repository: guzzhao/my-react-app
+          repository: guzzhao/myBlog
           path: src
           ref: master
       - run: ls
