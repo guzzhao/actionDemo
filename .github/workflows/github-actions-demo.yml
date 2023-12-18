@@ -17,7 +17,7 @@ jobs:
         with:
           repository: guzzhao/myBlog
           path: src
-          ref: master
+          ref: main
       - run: ls
       - run: cd my-tools
       - run: ls
