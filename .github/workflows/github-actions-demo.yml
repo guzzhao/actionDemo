@@ -18,8 +18,8 @@ jobs:
           repository: guzzhao/myBlog
           ref: main
       - run: ls -alh
+      - run: pwd
       - run: cd posts
       - run: ls
-      - run: cd src
-      - run: ls
+      - run: pws
       
