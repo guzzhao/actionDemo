@@ -16,7 +16,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: guzzhao/myBlog
-          path: posts
           ref: main
       - run: ls
       - run: cd posts
