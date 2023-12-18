@@ -17,6 +17,7 @@ jobs:
         with:
           repository: guzzhao/my-react-app
           path: src
+          ref: master
       - run: ls
       - run: cd my-tools
       - run: ls
