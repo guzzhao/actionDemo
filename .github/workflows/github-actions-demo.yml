@@ -19,6 +19,7 @@ jobs:
         with:
           repository: guzzhao/myBlog
           ref: main
+          clean: false
       - run: ls -alh
       - run: pwd
       - run: cd posts
