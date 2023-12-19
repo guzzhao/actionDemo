@@ -10,24 +10,22 @@ jobs:
         with:
           repository: guzzhao/myBlog
           ref: main
-      # - run: rm -rf posts
       - name: Check out repository code
         uses: actions/checkout@v4
         with:
           path: posts
       - run: ls
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
-      
-      - run: ls -alh
-      - run: pwd
-      - run: cd posts
-      - run: ls
-      - run: pwd
-      - run: echo "🍏 -------========="
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Build docs
+        run: pnpm run build
       - run: |
           ls
-        working-directory: posts
-      
+        working-directory: .vitepress/dist
+        
+        
