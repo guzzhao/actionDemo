@@ -10,6 +10,7 @@ jobs:
         with:
           repository: guzzhao/myBlog
           ref: main
+          filter: posts
       - name: Check out repository code
         uses: actions/checkout@v4
         with:
