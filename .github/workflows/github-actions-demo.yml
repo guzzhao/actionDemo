@@ -10,7 +10,7 @@ jobs:
         with:
           repository: guzzhao/myBlog
           ref: main
-      - run: rm -rf posts
+      # - run: rm -rf posts
       - name: Check out repository code
         uses: actions/checkout@v4
         with:
@@ -27,9 +27,6 @@ jobs:
       - run: ls
       - run: pwd
       - run: echo "🍏 -------========="
-      - run: |
-          ls
-        working-directory: my
       - run: |
           ls
         working-directory: posts
