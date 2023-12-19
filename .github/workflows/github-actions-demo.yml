@@ -5,6 +5,11 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout tools repo
+        uses: actions/checkout@v4
+        with:
+          repository: guzzhao/myBlog
+          ref: main
       - name: Check out repository code
         uses: actions/checkout@v4
         with:
@@ -14,12 +19,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - name: Checkout tools repo
-        uses: actions/checkout@v4
-        with:
-          repository: guzzhao/myBlog
-          ref: main
-          clean: false
+      
       - run: ls -alh
       - run: pwd
       - run: cd posts
