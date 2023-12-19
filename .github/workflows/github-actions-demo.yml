@@ -10,11 +10,11 @@ jobs:
         with:
           repository: guzzhao/myBlog
           ref: main
-          filter: posts
+      - run: rm -rf posts
       - name: Check out repository code
         uses: actions/checkout@v4
         with:
-          path: my
+          path: posts
       - run: ls
       - name: List files in the repository
         run: |
